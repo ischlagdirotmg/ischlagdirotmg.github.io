@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>RealmPlayer</title>
+<link rel="shortcut icon" href="https://ischlagdirotmg.github.io/Untitled.png" />
+<body background="https://ischlagdirotmg.github.io/Untitled.png">
+<style>
+.hidden{
+display:none;
+}
+
+.unhidden{
+display:block;
+}
+</style>
+<script type="text/javascript">
+function show(clickedButton, divID) {
+var item = document.getElementById(divID);
+if (item) {
+if(item.className=='hidden'){
+item.className = 'unhidden' ;
+clickedButton.value = 'hide'
+}else{
+item.className = 'hidden';
+clickedButton.value = 'show'
+}
+}}
+
+</script>
+</head>
+<center>
+<div class="wsite-spacer" style="height:50px;"></div>
+<div id="about" class="hidden">
+<div class="twitch">
+</div>
+</div>
+<iframe src="http://www.realmeye.com/agc/" frameborder="0" scrolling="no" width="800" height="600"></iframe>
+<button id="close" class="closing" onclick="show(this, 'about')" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"></button>
+</center>
+</div>
+</div>
+</center>
+<a href="https://discord.gg/4A8JSBN" target="_blank"><button>Connect to Discord Channel</button></a>
+<p><iframe allowtransparency="true" frameborder="0" height="50" name="Discord " scrolling="no" src="https://discordapp.com/widget?id=195271409788780544&amp;theme=dark" title="Talk to players here" width="350"></iframe></p>
+</center>
+</body>
+</html>
